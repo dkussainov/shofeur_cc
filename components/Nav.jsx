@@ -8,7 +8,7 @@ const Nav = () => {
     <nav className="flex-between w-full mb-16 pt-3">
       <Link href="/" className="flex gap-2 flex-center">
         <Image
-          src="/assets/images/full_logo.png"
+          src="/assets/images/logo1.png"
           alt="Shofeur logo"
           width={200}
           height={10}
@@ -17,16 +17,16 @@ const Nav = () => {
       <div className="sm:flex hidden">
           <div className="flex gap-3 md:gap-5">
             <Link href="/create-prompt" className="black_btn">
-              Create Post
+              Add Listing
             </Link>
             <button type="button"  className="outline_btn">
-              Sign Out
+              Sign In
             </button>
             <Link href="/profile">
               <Image
-                src="/assets/images/logo.png"
-                width={37}
-                height={37}
+                src="/assets/images/login.png"
+                width={100}
+                height={100}
                 className="rounded-full"
                 alt="profile"
               />
