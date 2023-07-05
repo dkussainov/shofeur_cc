@@ -1,3 +1,4 @@
+import Footer from "@components/Footer";
 import Main from "@components/Main";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       </h1>
       <p className="desc text-center">Chauffeured reservations made simple</p>
       <Main />
+      <Footer />
     </section>
   );
 };

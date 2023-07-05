@@ -66,7 +66,6 @@
   }
 }
 
-
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
@@ -79,8 +78,16 @@
   @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
 }
 
+.menu_btn {
+  @apply rounded-full  bg-transparent py-1.5 px-5 text-black transition-all hover:cursor-pointer hover:border border-black flex items-center justify-center;
+}
+
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+
+.category_text {
+  @apply mt-10 text-lg font-bold text-black sm:text-6xl;
 }
 
 .orange_gradient {
@@ -135,7 +142,7 @@
 }
 
 .dropdown {
-  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+  @apply absolute right-0 top-full mt-3 w-full p-5 bg-gray-200 rounded-lg min-w-[210px] flex flex-col gap-2 justify-end items-start;
 }
 
 .dropdown_link {
