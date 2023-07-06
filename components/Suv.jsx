@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Suv = ({ post }) => {
   return (
-    <div class="prompt_card">
+    <div class="prompt_card md:h-[480px]">
       <Image
         class="w-full rounded-lg drop-shadow-md"
         src={post.image}

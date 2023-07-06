@@ -131,17 +131,23 @@ const Main = () => {
       <div>
         <h3 className="category_text">Limo near New York, NY</h3>
         <LimosList limos={limos} />
-        <button className="underline text-blue-600">more results</button>
+        <button className="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+          more results
+        </button>
       </div>
       <div>
         <h3 className="category_text">SUV near New York, NY</h3>
         <SuvsList suvs={suvs} />
-        <button className="underline text-blue-600">more results</button>
+        <button className="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+          more results
+        </button>
       </div>
       <div>
         <h3 className="category_text">Party Bus near New York, NY</h3>
         <BusesList buses={buses} />
-        <button className="underline text-blue-600">more results</button>
+        <button className="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+          more results
+        </button>
       </div>
       <div>
         <h3 className="category_text">Choose vehicle for your Event</h3>
