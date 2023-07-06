@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { FcSearch } from "react-icons/fc";
 
 import Limo from "./Limo";
 import Suv from "./Suv";
@@ -8,7 +9,7 @@ import Bus from "./Bus";
 
 const LimosList = ({ limos }) => {
   return (
-    <div className="mt-16 prompt_layout">
+    <div className="prompt_layout">
       {limos.map((post) => (
         <Limo key={post._id} post={post} />
       ))}
@@ -18,7 +19,7 @@ const LimosList = ({ limos }) => {
 
 const SuvsList = ({ suvs }) => {
   return (
-    <div className="mt-16 prompt_layout">
+    <div className="prompt_layout">
       {suvs.map((post) => (
         <Suv key={post._id} post={post} />
       ))}
@@ -28,7 +29,7 @@ const SuvsList = ({ suvs }) => {
 
 const BusesList = ({ buses }) => {
   return (
-    <div className="mt-16 prompt_layout">
+    <div className="prompt_layout">
       {buses.map((post) => (
         <Bus key={post._id} post={post} />
       ))}
@@ -73,31 +74,54 @@ const Main = () => {
     fetchBuses();
   }, []);
 
-  console.log(buses, limos, suvs);
+  let curr = new Date();
+  curr.setDate(curr.getDate() + 3);
+  let date = curr.toISOString().substring(0, 10);
+  let today = new Date();
+  let date2 = today.toISOString().substring(0, 10);
 
   return (
-    <section className="feed">
-      <form className=" w-full flex-center">
+    <section className="feed mb-5">
+      <form className="w-full flex-center">
         <input
           type="text"
-          placeholder="Search for Limo, SUV or a Party Bus"
+          placeholder="City, airport, address or hotel"
           value={searchText}
           onChange={handleSearchChange}
           required
-          className="search_input peer"
+          className="search_input"
         />
+        <input
+          type="date"
+          required
+          className="date_input"
+          defaultValue={date2}
+        />
+
+        <input
+          type="date"
+          required
+          className="date_input"
+          defaultValue={date}
+        />
+        <button className="mx-2 hover:scale-125">
+          <FcSearch />
+        </button>
       </form>
       <div>
-        <h3 className="category_text">Limo near location</h3>
+        <h3 className="category_text">Limo near New York, NY</h3>
         <LimosList limos={limos} />
+        <button className="underline">more results</button>
       </div>
       <div>
-        <h3 className="category_text">SUV near location</h3>
+        <h3 className="category_text">SUV near New York, NY</h3>
         <SuvsList suvs={suvs} />
+        <button className="underline">more results</button>
       </div>
       <div>
-        <h3 className="category_text">Party Bus near location</h3>
+        <h3 className="category_text">Party Bus near New York, NY</h3>
         <BusesList buses={buses} />
+        <button className="underline">more results</button>
       </div>
     </section>
   );

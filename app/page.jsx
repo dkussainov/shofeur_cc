@@ -1,4 +1,5 @@
 import Footer from "@components/Footer";
+import HowItWorks from "@components/HowItWorks";
 import Main from "@components/Main";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         <span className="orange_gradient text-center"> New York City, NY</span>
       </h1>
       <p className="desc text-center">Chauffeured reservations made simple</p>
+      <HowItWorks />
       <Main />
       <Footer />
     </section>
