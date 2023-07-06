@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { BsFillPeopleFill } from "react-icons/bs";
 
 const Limo = ({ post }) => {
   return (

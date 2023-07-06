@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // experimental: {
-  //   appDir: true,
-  //   serverComponentsExternalPackages: ["mongoose"],
-  // },
   images: {
     domains: [
       "lh3.googleusercontent.com",
@@ -11,15 +7,8 @@ const nextConfig = {
       "www.shofeur.com",
       "static.wixstatic.com",
       "hips.hearstapps.com",
-      "www.google.com"
+      "www.google.com",
     ],
-  },
-  webpack(config) {
-    config.experiments = {
-      ...config.experiments,
-      topLevelAwait: true,
-    };
-    return config;
   },
 };
 
