@@ -46,3 +46,6 @@ Summary:
 16. NavBar has Shofeurs logo:
     a. Desktop view has "Add Listing" and "Sign In" buttons, as well as "Menu" button with dropdown containig all the necessary information and website navigation.
     b. Mobile view has only Logo and "Menu" dropdown with all links.
+
+P.S. Everything should work good at your side. Please let me know if you have any issues with installation or starting!
+
