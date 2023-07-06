@@ -31,16 +31,18 @@ Summary:
 2. The page is created to show in the search engine results for Limo in NYC, NY. (The link to the website page when somebody searches for limo in NYC, NY)
 3. Components, Utils, Styles and API foldes were added for better structure.
 4. MongoDB was used to create and GET collections of the data that were used in this app.
-5. When you open the page you can see the big Header saying that you will find vehicle in NYC here as well as Shofeurs slogan.
-6. Next I decided to put explanation of how easy it is to use Shofeur, so user is more attracted with less steps to do.
-7. Bellow the explanation is form to change location and dates.
-8. Main part is rendered cards of vehicles that are sorted by categories. The category that is above the rest is the one that user typed in the search.
-   9.On the rendered cards users can see basic information about the vehicle(title, rating, how many reviews, price, capacity, and hashtag for the category).
-9. If users want to see more from specific category, they can click more results to see the results only in specific category.
-10. When you scroll down, you can find the block which propose to find the vehicle for your specific event.
-11. Card for fleet owners, with the button to join the Shofeur app.
-12. Subscription form.
-13. Footer with all the necessary information and navigattion on the app.
-14. Styles were designed to look good and fit on the desktop devices as well as mobile devices using Tailwind CSS.
-15. Card components were created for each category and each part of the web app.
-16. Main component renders Vehicles and Events. Each card component is rendered on the server side, for better search results.
+5.
+6. When you open the page you can see the big Header saying that you will find vehicle in NYC here as well as Shofeurs slogan.
+7. Next I decided to put explanation of how easy it is to use Shofeur, so user is more attracted with less steps to do.
+8. Bellow the explanation is form to change location and dates.
+9. Main part is rendered cards of vehicles that are sorted by categories. The category that is above the rest is the one that user typed in the search.
+   .On the rendered cards users can see basic information about the vehicle(title, rating, how many reviews, price, capacity, and hashtag for the category).
+10. If users want to see more from specific category, they can click more results to see the results only in specific category.
+11. When you scroll down, you can find the block which propose to find the vehicle for your specific event.
+12. Card for fleet owners, with the button to join the Shofeur app.
+13. Subscription form.
+14. Footer with Shofeur logo and all the necessary information and navigattion on the app.
+15. Page was designed to look good and fit on the desktop devices as well as mobile devices using Tailwind CSS.
+16. NavBar has Shofeurs logo:
+    a. Desktop view has "Add Listing" and "Sign In" buttons, as well as "Menu" button with dropdown containig all the necessary information and website navigation.
+    b. Mobile view has only Logo and "Menu" dropdown with all links.
