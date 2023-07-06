@@ -24,6 +24,8 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+Summary:
+
 1. Decision to use Next.js was taken because it allows us to render most of the components at server side which makes this page SEO friendly.
    Main and Nav were rendered on client side, because of using React hooks.
 2. The page is created to show in the search engine results for Limo in NYC, NY. (The link to the website page when somebody searches for limo in NYC, NY)
