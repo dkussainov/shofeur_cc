@@ -3,10 +3,10 @@ const Subscribe = () => {
     <div class="bg-white rounded-2xl border shadow-xl p-10 w-2/3 mb-5">
       <div class="flex flex-col items-center space-y-4">
         <h1 class="font-bold text-2xl text-gray-700 w-4/6 text-center">
-        Join our mailing list
+          Join our mailing list
         </h1>
         <p class="text-sm text-gray-500 text-center w-5/6">
-        and never miss an update
+          and never miss an update
         </p>
         <input
           type="text"
