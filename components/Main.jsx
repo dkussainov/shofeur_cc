@@ -6,11 +6,12 @@ import { FcSearch } from "react-icons/fc";
 import Limo from "./Limo";
 import Suv from "./Suv";
 import Bus from "./Bus";
+import Event from "./Event";
 
 const LimosList = ({ limos }) => {
   return (
     <div className="prompt_layout">
-      {limos.map((post) => (
+      {limos?.map((post) => (
         <Limo key={post._id} post={post} />
       ))}
     </div>
@@ -20,7 +21,7 @@ const LimosList = ({ limos }) => {
 const SuvsList = ({ suvs }) => {
   return (
     <div className="prompt_layout">
-      {suvs.map((post) => (
+      {suvs?.map((post) => (
         <Suv key={post._id} post={post} />
       ))}
     </div>
@@ -30,8 +31,18 @@ const SuvsList = ({ suvs }) => {
 const BusesList = ({ buses }) => {
   return (
     <div className="prompt_layout">
-      {buses.map((post) => (
+      {buses?.map((post) => (
         <Bus key={post._id} post={post} />
+      ))}
+    </div>
+  );
+};
+
+const EventsList = ({ events }) => {
+  return (
+    <div className="prompt_layout">
+      {events?.map((event) => (
+        <Event key={event._id} event={event} />
       ))}
     </div>
   );
@@ -46,6 +57,7 @@ const Main = () => {
   const [limos, setLimos] = useState([]);
   const [suvs, setSuvs] = useState([]);
   const [buses, setBuses] = useState([]);
+  const [events, setEvents] = useState([]);
 
   useEffect(() => {
     const fetchLimos = async () => {
@@ -69,9 +81,17 @@ const Main = () => {
       setBuses(dataBus);
     };
 
+    const fetchEvents = async () => {
+      const responseEvents = await fetch("/api/event");
+      const dataEvents = await responseEvents.json();
+
+      setEvents(dataEvents);
+    };
+
     fetchLimos();
     fetchSuvs();
     fetchBuses();
+    fetchEvents();
   }, []);
 
   let curr = new Date();
@@ -81,7 +101,7 @@ const Main = () => {
   let date2 = today.toISOString().substring(0, 10);
 
   return (
-    <section className="feed mb-5">
+    <section className="feed mb-5 divide-y-2 divide-yellow-500">
       <form className="w-full flex-center">
         <input
           type="text"
@@ -111,17 +131,21 @@ const Main = () => {
       <div>
         <h3 className="category_text">Limo near New York, NY</h3>
         <LimosList limos={limos} />
-        <button className="underline">more results</button>
+        <button className="underline text-blue-600">more results</button>
       </div>
       <div>
         <h3 className="category_text">SUV near New York, NY</h3>
         <SuvsList suvs={suvs} />
-        <button className="underline">more results</button>
+        <button className="underline text-blue-600">more results</button>
       </div>
       <div>
         <h3 className="category_text">Party Bus near New York, NY</h3>
         <BusesList buses={buses} />
-        <button className="underline">more results</button>
+        <button className="underline text-blue-600">more results</button>
+      </div>
+      <div>
+        <h3 className="category_text">Choose vehicle for your Event</h3>
+        <EventsList events={events} />
       </div>
     </section>
   );

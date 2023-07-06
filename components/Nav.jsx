@@ -15,8 +15,8 @@ const Nav = () => {
           src="/assets/images/logo1.png"
           alt="Shofeur logo"
           width={200}
-          height={53.94}
-          className="object-contain rounded-full"
+          height={100}
+          className="object-contain rounded-full width-auto"
         />
       </Link>
 

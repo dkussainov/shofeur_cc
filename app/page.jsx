@@ -1,6 +1,8 @@
 import Footer from "@components/Footer";
 import HowItWorks from "@components/HowItWorks";
 import Main from "@components/Main";
+import Operators from "@components/Operators";
+import Subscribe from "@components/Subscribe";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <p className="desc text-center">Chauffeured reservations made simple</p>
       <HowItWorks />
       <Main />
+      <Operators />
+      <Subscribe />
       <Footer />
     </section>
   );

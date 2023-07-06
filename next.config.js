@@ -10,7 +10,8 @@ const nextConfig = {
       "www.price4limo.com",
       "www.shofeur.com",
       "static.wixstatic.com",
-      "hips.hearstapps.com"
+      "hips.hearstapps.com",
+      "www.google.com"
     ],
   },
   webpack(config) {

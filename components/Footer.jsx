@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <footer class="bg-gray-200 dark:bg-gray-900 w-screen">
@@ -9,7 +7,7 @@ const Footer = () => {
             <a href="/" class="flex items-center">
               <img
                 src="/assets/images/logo1.png"
-                class="h-8 mr-3 rounded-full"
+                class="h-8 mr-3 rounded-full width-auto"
                 alt="Shofeur Logo"
               />
             </a>
