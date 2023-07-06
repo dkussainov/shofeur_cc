@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Operators = () => {
   return (
-    <div class="w-2/3 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-5 mt-10">
+    <div class="w-2/3 bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-5 mt-10">
       <a href="#">
         <Image
           class="rounded-t-lg w-full"
