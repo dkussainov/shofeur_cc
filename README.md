@@ -31,9 +31,9 @@ Summary:
 1. Decision to use Next.js was taken because it allows us to render most of the components at server side which makes this page SEO friendly.
    Main and Nav were rendered on client side, because of using React hooks.
 2. The page is created to show in the search engine results for Limo in NYC, NY. (The link to the website page when somebody searches for limo in NYC, NY)
-3. Components, Utils, Styles and API foldes were added for better structure.
-4. MongoDB was used to create and GET collections of the data that were used in this app.
-5.
+3. Components, Utils, Styles and API folders were added for better structure.
+4. API was created to POST and GET collections of the data.
+5. MongoDB database to store data.
 6. When you open the page you can see the big Header saying that you will find vehicle in NYC here as well as Shofeurs slogan.
 7. Next I decided to put explanation of how easy it is to use Shofeur, so user is more attracted with less steps to do.
 8. Bellow the explanation is form to change location and dates.
