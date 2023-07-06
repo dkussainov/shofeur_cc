@@ -1,6 +1,6 @@
 Check out summary of my work with instructions below:
 
-I decided to create this app using Next.js
+I decided to create this app using Next.js, Tailwind CSS and MongoDB.
 
 ````
 
